@@ -7,7 +7,6 @@ using BatteryNotifier.Constants;
 using BatteryNotifier.Helpers;
 using BatteryNotifier.Properties;
 using BatteryNotifier.Providers;
-using NuGet;
 using appSetting = BatteryNotifier.Setting.appSetting;
 
 namespace BatteryNotifier.Forms {
