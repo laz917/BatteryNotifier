@@ -12,7 +12,7 @@ namespace BatteryNotifier.Setting {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.6.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.11.0.0")]
     internal sealed partial class appSetting : global::System.Configuration.ApplicationSettingsBase {
         
         private static appSetting defaultInstance = ((appSetting)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new appSetting())));
@@ -188,6 +188,150 @@ namespace BatteryNotifier.Setting {
             }
             set {
                 this["startMinimized"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("40")]
+        public int lowBatteryNotificationValue2 {
+            get {
+                return ((int)(this["lowBatteryNotificationValue2"]));
+            }
+            set {
+                this["lowBatteryNotificationValue2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("70")]
+        public int lowBatteryNotificationValue3 {
+            get {
+                return ((int)(this["lowBatteryNotificationValue3"]));
+            }
+            set {
+                this["lowBatteryNotificationValue3"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool lowBatteryNotification2 {
+            get {
+                return ((bool)(this["lowBatteryNotification2"]));
+            }
+            set {
+                this["lowBatteryNotification2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool lowBatteryNotification3 {
+            get {
+                return ((bool)(this["lowBatteryNotification3"]));
+            }
+            set {
+                this["lowBatteryNotification3"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("🔋 Battery is low, please Connect to Charger.")]
+        public string lowBatteryNotificationMessageTemplate {
+            get {
+                return ((string)(this["lowBatteryNotificationMessageTemplate"]));
+            }
+            set {
+                this["lowBatteryNotificationMessageTemplate"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("🔋 Battery went over {0} threshold")]
+        public string lowBatteryNotificationMessageTemplate2 {
+            get {
+                return ((string)(this["lowBatteryNotificationMessageTemplate2"]));
+            }
+            set {
+                this["lowBatteryNotificationMessageTemplate2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("🔋Battery went over {0} threshold")]
+        public string lowBatteryNotificationMessageTemplate3 {
+            get {
+                return ((string)(this["lowBatteryNotificationMessageTemplate3"]));
+            }
+            set {
+                this["lowBatteryNotificationMessageTemplate3"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("00:00:50")]
+        public global::System.TimeSpan lowBatteryNotificationDuration {
+            get {
+                return ((global::System.TimeSpan)(this["lowBatteryNotificationDuration"]));
+            }
+            set {
+                this["lowBatteryNotificationDuration"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("00:00:50")]
+        public global::System.TimeSpan lowBatteryNotificationDuration2 {
+            get {
+                return ((global::System.TimeSpan)(this["lowBatteryNotificationDuration2"]));
+            }
+            set {
+                this["lowBatteryNotificationDuration2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("00:00:50")]
+        public global::System.TimeSpan lowBatteryNotificationDuration3 {
+            get {
+                return ((global::System.TimeSpan)(this["lowBatteryNotificationDuration3"]));
+            }
+            set {
+                this["lowBatteryNotificationDuration3"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("🔋 Battery is full please unplug the charger.")]
+        public string fullBatteryNotificationMessageTemplate {
+            get {
+                return ((string)(this["fullBatteryNotificationMessageTemplate"]));
+            }
+            set {
+                this["fullBatteryNotificationMessageTemplate"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Full battery")]
+        public string fullBatteryNotificationTitle {
+            get {
+                return ((string)(this["fullBatteryNotificationTitle"]));
+            }
+            set {
+                this["fullBatteryNotificationTitle"] = value;
             }
         }
     }

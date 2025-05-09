@@ -2,7 +2,6 @@
 using System.Windows.Forms;
 using BatteryNotifier.Forms;
 using System.Threading.Tasks;
-using Squirrel;
 using BatteryNotifier.Helpers;
 using System.Threading;
 
@@ -10,7 +9,6 @@ namespace BatteryNotifier
 {
     internal static class Program
     {
-        public static UpdateManager? UpdateManager;
 
         private static Form? MainForm;
 
@@ -69,9 +67,10 @@ namespace BatteryNotifier
 
         public static async Task InitUpdateManager()
         {
+         return;
             try
             {
-                UpdateManager = await UpdateManager.GitHubUpdateManager($@"{Constants.Constant.SourceRepositoryUrl}");
+                //UpdateManager = await UpdateManager.GitHubUpdateManager($@"{Constants.Constant.SourceRepositoryUrl}");
             }
             catch (Exception)
             {
@@ -83,21 +82,22 @@ namespace BatteryNotifier
         {
             try
             {
-                var updateInfo = await UpdateManager?.CheckForUpdate()!;
+            //var updateInfo = await UpdateManager?.CheckForUpdate()!;
 
-                if (updateInfo.ReleasesToApply.Count > 0)
-                {
-                    var releaseEntry = await UpdateManager.UpdateApp();
+            //if (updateInfo.ReleasesToApply.Count > 0)
+            //{
+            //    var releaseEntry = await UpdateManager.UpdateApp();
 
-                    if (releaseEntry != null)
-                    {
-                        (MainForm as Dashboard)?.Notify($"✅ Battery Notifier {releaseEntry.Version} downloaded. Restart to apply.");
-                    }
-                }
-                else
-                {
-                    (MainForm as Dashboard)?.Notify("✌ No Update Available");
-                }
+            //    if (releaseEntry != null)
+            //    {
+            //        (MainForm as Dashboard)?.Notify($"✅ Battery Notifier {releaseEntry.Version} downloaded. Restart to apply.");
+            //    }
+            //}
+            //else
+            //{
+            //    (MainForm as Dashboard)?.Notify("✌ No Update Available");
+            //}
+            return;
             }
             catch (Exception)
             {
