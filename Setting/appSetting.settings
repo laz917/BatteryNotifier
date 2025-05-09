@@ -44,5 +44,41 @@
     <Setting Name="startMinimized" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
+    <Setting Name="lowBatteryNotificationValue2" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">40</Value>
+    </Setting>
+    <Setting Name="lowBatteryNotificationValue3" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">70</Value>
+    </Setting>
+    <Setting Name="lowBatteryNotification2" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="lowBatteryNotification3" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="lowBatteryNotificationMessageTemplate" Type="System.String" Scope="User">
+      <Value Profile="(Default)">🔋 Battery is low, please Connect to Charger.</Value>
+    </Setting>
+    <Setting Name="lowBatteryNotificationMessageTemplate2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">🔋 Battery went over {0} threshold</Value>
+    </Setting>
+    <Setting Name="lowBatteryNotificationMessageTemplate3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">🔋Battery went over {0} threshold</Value>
+    </Setting>
+    <Setting Name="lowBatteryNotificationDuration" Type="System.TimeSpan" Scope="User">
+      <Value Profile="(Default)">00:00:50</Value>
+    </Setting>
+    <Setting Name="lowBatteryNotificationDuration2" Type="System.TimeSpan" Scope="User">
+      <Value Profile="(Default)">00:00:50</Value>
+    </Setting>
+    <Setting Name="lowBatteryNotificationDuration3" Type="System.TimeSpan" Scope="User">
+      <Value Profile="(Default)">00:00:50</Value>
+    </Setting>
+    <Setting Name="fullBatteryNotificationMessageTemplate" Type="System.String" Scope="User">
+      <Value Profile="(Default)">🔋 Battery is full please unplug the charger.</Value>
+    </Setting>
+    <Setting Name="fullBatteryNotificationTitle" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Full battery</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
